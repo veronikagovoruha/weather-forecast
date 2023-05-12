@@ -9,7 +9,6 @@ const UserRoutes = () => {
     <Suspense>
       <Routes>
         <Route path="/" element={<MainPage />} />
-        {/* <Route path="/home" element={<MainPage />} /> */}
         <Route path="/weather-forecast" element={<MainPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>

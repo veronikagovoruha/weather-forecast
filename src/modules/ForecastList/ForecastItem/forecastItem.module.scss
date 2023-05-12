@@ -1,0 +1,16 @@
+@import '../../../sass/utils/vars';
+
+.item{
+    border: 1px solid #000000;
+    border-radius: 5px;
+    padding: 15px 10px;
+}
+
+.today{
+    font-family: $mainFont;
+    font-size: 20px;
+}
+
+.date{
+    font-size: 14px;
+}

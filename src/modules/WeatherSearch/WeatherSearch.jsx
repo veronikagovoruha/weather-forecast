@@ -38,7 +38,6 @@ const WeatherSearch = () => {
     const { search } = data;
     setSearchParams({ search });
   };
-  console.log(1, forecast);
   return (
     <>
       <WeatherSearchForm onSubmit={changeSearch} />

@@ -11,9 +11,6 @@ const WeatherSearchForm = ({ onSubmit }) => {
     initialState,
   });
 
-  //! cl
-  console.log({ state });
-
   return (
     <form onSubmit={handleSubmit}>
       {fields.map(({ id, name, value, type, placeholder, required }) => (

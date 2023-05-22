@@ -1,5 +1,3 @@
-import { useState, useEffect } from 'react';
-
 import useForecastContext from '../../shared/hooks/useForecastContext';
 
 import ForecastItem from './ForecastItem/ForecastItem';

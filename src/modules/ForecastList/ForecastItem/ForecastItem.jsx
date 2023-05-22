@@ -4,7 +4,6 @@ import classNames from "classnames";
 import { useSearchParams } from "react-router-dom";
 
 const ForecastItem = ({forecast}) => {
-    console.log(forecast);
     const [searchParams, setSearchParams] = useSearchParams();
     const date = new Date();
     const currentHour = date.getHours();
@@ -12,7 +11,7 @@ const ForecastItem = ({forecast}) => {
 
     const city = searchParams.get('search');
 
-    const elements =  forecast.map(({ date, astro, day, hour }) => {
+    const elements =  forecast.map(({ astro, day, hour }) => {
     const srcUrl = hour[currentHour].condition.icon;
     const text = hour[currentHour].condition.text;
     return (<>
@@ -35,7 +34,7 @@ const ForecastItem = ({forecast}) => {
         </li>
         <li className={classNames(s['item'])}>
         <p>Maxtemp C: {day.maxtemp_c}</p>
-        <p>Maxtemp C: {day.mintemp_c}</p>
+        <p>Mintemp C: {day.mintemp_c}</p>
         </li>
     </>
     )})

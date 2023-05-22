@@ -6,6 +6,10 @@
     padding: 15px 10px;
 }
 
+.item:not(:last-child){
+    margin-right: 20px;
+}
+
 .today{
     font-family: $mainFont;
     font-size: 20px;

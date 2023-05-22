@@ -1,11 +1,11 @@
 import ForecastList from '../../modules/ForecastList/ForecastList';
-
-import s from './../../sass/base/_container.scss';
+import ForecastHoursList from '../../modules/ForecastHoursList/ForecastHoursList';
 
 const MainPage = () => {
   return (
-    <div className={s.container}>
+    <div className='container'>
       <ForecastList />
+      <ForecastHoursList />
     </div>
   );
 };

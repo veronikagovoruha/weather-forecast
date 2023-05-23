@@ -1,10 +1,14 @@
+@import '../../sass/utils/vars';
+
 .list{
     display: flex;
     padding-top: 30px;
     padding-bottom: 30px;
     justify-content: center;
+    max-width: 1000px;
+    margin: 0 auto;
 
-    border: 1px solid #000000;
-    border-radius: 5px;
+    border-radius: 15px;
+    background-color: $forecastBckCl;
 }
 

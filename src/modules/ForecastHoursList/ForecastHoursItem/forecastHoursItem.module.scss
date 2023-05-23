@@ -1,0 +1,9 @@
+@import '../../../sass/utils/vars';
+
+.item{
+    padding: 15px 10px;
+    border-radius: 15px;
+    margin-left: 10px;
+    max-width: 150px;
+    background-color: $forecastItemCl;
+}

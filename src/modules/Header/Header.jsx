@@ -1,11 +1,14 @@
 import WeatherSearch from '../WeatherSearch/WeatherSearch';
 
-import s from './header.module.scss'
+import s from './header.module.scss';
 
 const Header = () => {
     return(
-        <header className={s.header}>
+        <header className={s.header} >
             <WeatherSearch />
+            <div>
+
+            </div>
         </header>
     )
 }

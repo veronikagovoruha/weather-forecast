@@ -2,6 +2,8 @@ import ForecastHoursItem from "./ForecastHoursItem/ForecastHoursItem";
 import { useEffect, useState } from 'react';
 
 import useForecastContext from '../../shared/hooks/useForecastContext';
+import s from './forecastHoursList.module.scss';
+import classNames from "classnames";
 
 const ForecastHoursList = () => {
     const { forecast } = useForecastContext();
@@ -18,8 +20,7 @@ const ForecastHoursList = () => {
     }, [forecast, setHourItems])
 
 
-    console.log(hourItems);
-    return (<ul>
+    return (<ul className={classNames(s['list'])}>
         {hourItems}
     </ul>)
 }
